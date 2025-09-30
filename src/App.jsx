@@ -1,14 +1,20 @@
 import ExpenseShow from "./components/ExpenseShow";
 import NewExpense from "./components/NewExpense/NewExpense";
-function App() {
-  //main
+import Expenses from "./components/ExpenseShow";
 
-  return (
-    <div>
-      <NewExpense />
-      <ExpenseShow />
-    </div>
-  );
+function App() {
+    //main
+
+
+    const addExpenseHandler = expense => {
+        console.log(expense);
+    }
+    return (
+        <div>
+            <NewExpense onAddExpense={addExpenseHandler}/>
+            <Expenses/>
+        </div>
+    );
 }
 
 export default App;
