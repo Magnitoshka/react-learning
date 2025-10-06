@@ -6,7 +6,7 @@ function ExpenseItem(props) {
   const [title, setTitle] = useState(props.title);
 
   return (
-    <>
+    <li>
       <Card className="expense-item">
         <div className="expense-item_description">
           <h2>{title}</h2>
@@ -22,7 +22,7 @@ function ExpenseItem(props) {
           Change Title
         </button>
       </Card>
-    </>
+</li>
   );
 }
 
