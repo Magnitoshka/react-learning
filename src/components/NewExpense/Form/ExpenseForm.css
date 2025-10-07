@@ -1,0 +1,13 @@
+.new-expense_control {
+    /*background-color: red;*/
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: center;
+}
+
+.new-expense_control label {
+    font-family: Helvetica, sans-serif;
+    color: #F31260;
+    font-size: 20px;
+}

@@ -1,9 +1,78 @@
 /*@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");*/
 
 * {
-  box-sizing: border-box;
-    transition: all 0.2s ease-in-out
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
 }
+
+body {
+    background-color: #18181B;
+}
+
+button {
+    border: none;
+    background-color: #F31260;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #27272A;
+    border-radius: 12px;
+    color: #A1A1AA;
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #27272A;
+    border-radius: 12px;
+    color: #A1A1AA;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+option {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+option:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+option:last-of-type {
+    border-radius: 0 0 8px 8px;
+}
+
+option:not(option:last-of-type) {
+    border-bottom: none;
+}
+
+
+
+label {
+    font-family: Helvetica, sans-serif;
+    color: #F31260;
+    font-size: 20px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(93%) saturate(7481%) hue-rotate(328deg) brightness(94%) contrast(104%);
+}
+
 
 /*html {*/
 /*  font-family: "Quicksand", sans-serif;*/
